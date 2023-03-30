@@ -1,0 +1,219 @@
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+
+/************************************* HEADER ***********************************/
+header{
+    position: absolute;
+    left: 0; 
+    right: 0;
+    z-index: 1;
+}
+#header-logo{
+    height: 24px;
+}
+header a {
+    color: white;
+    margin-left: 1.5rem;
+}
+
+header a:hover{
+    color: white;
+}
+
+header a:visited{
+    color: white;
+}
+
+
+#meni-icon{
+    width: 2rem;
+}
+
+
+
+.solid-header{
+    position: fixed;
+    background-color: #c69572;
+
+    transition: background-color 0.5s ease;
+}
+
+
+
+/************************************* HERO SECTION ***********************************/
+
+
+#hero-section{
+    background : linear-gradient(to right, #36313779, #36313779), url(../img/hero.jpg); /*ZAMENA ZA CLASS BEFORE*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* NESTO NE RADI...*/
+/*#hero-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #41333262;
+    height: 100vh;
+
+}*/
+
+#hero-logo{
+    width: 256px;
+}
+
+#arrow-down{
+    position: absolute;
+    bottom: 64px; left: 0; right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+
+    transition: 0.5s ease;
+}
+
+/************************************* INTRI SECTION ***********************************/
+
+
+#intro-section{
+    background-color:#eae7de;
+
+}
+
+.intro-icon img{
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+
+.intro-icon:hover{
+    transform: translateY(-20px);
+    transition-duration: 0.7s;
+    
+    cursor: pointer;
+}
+
+
+
+/************************************* ABOUT SECTION ***********************************/
+
+
+#about-bg-1{
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+}
+
+#about-bg-2{
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    min-height: 640px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    #abput-bg-2{
+        content: "";
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+        background-color: #4133329c;
+    }
+}
+
+
+/************************************* MENI SECTION ***********************************/
+
+
+
+#meni-section{
+    background-color: #eae7de;
+}
+
+
+
+
+
+
+
+/************************************* CONTACT INFO SECTION ***********************************/
+
+#contact-info-bg-1{
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+#contact-info-bg-2{
+    background: linear-gradient(to right, #36313782, #36313782)
+}
+
+
+/************************************* MAP SECTION ***********************************/
+
+
+#map{
+    height: 30rem;
+}
+
+
+
+
+/************************************* FOTTER SECTION ***********************************/
+
+
+footer{
+    background-color: #312423;
+
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        text-align: center ;
+    }
+    #social-icons{
+        text-align: center !important;
+        margin-top: 8px;
+    }
+}
+
+
+/************************************* MOBILE MENU ***********************************/
+
+
+#mobile-manu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #312423ed;
+    z-index: 2;
+
+    display: none;
+}
+
+#mobile-manu a {
+    color: white;
+}
+#mobile-manu a:hover{ 
+    color: rgb(180, 180, 180);
+}
+
+#mobile-menu, #close-btn{
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    width: 35px;
+
+}

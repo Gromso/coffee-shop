@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/leaflet.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Coffee Shop</title>
+</head>
+
+<body>
+
+    <div id="mobile-manu">
+        <a id="close-btn" href="#">
+            <span class="fa-stack fa-2x ">
+                
+                <i class="fa-solid fa-xmark fa-xl" style="color: #ededed;"></i>
+                
+            </span>
+        </a>
+
+        <div class="container">
+            <div class="row align-items-center vh-100">
+                <div class="col-12 text-center fw-bold">
+                    <nav>
+                        <div>
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3 m"
+                                href="#intro-section">about</a>
+                        </div>
+                        <div class="my-3">
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3 "
+                                href="#meni-section">products</a>
+                        </div>
+                        <div class="mb-3">
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3"
+                                href="#contact-info-section">contact</a>
+                        </div>
+                        <div>
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3" href="#map-section">how
+                                to find us?</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header id="header" class="p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img id="header-logo" src="./svg/header-logo.svg" alt="coffee shop header logo">
+                </div>
+                <div class=" d-none d-md-block col-8 text-end ">
+                    <a class="text-decoration-none text-uppercase" href="#intro-section">about</a>
+                    <a class="text-decoration-none text-uppercase" href="#meni-section">products</a>
+                    <a class="text-decoration-none text-uppercase" href="#contact-info-section">contact</a>
+                    <a class="text-decoration-none text-uppercase" href="#map-section">how to find us?</a>
+                </div>
+                <div class=" d-md-none col-8 text-end">
+                    <a id="menu-btn" href="#">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <section id="hero-section" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center pb-5">
+                <div class="col-12 text-center">
+                    <img id="hero-logo" src="./svg/logo.svg" alt="coffee shop Logo">
+                    <h1 class="display-2 fw-bold">THE HOME OF COFFEE</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At vel non labore odio
+                        incidunt illum quam aut id!</p>
+                </div>
+            </div>
+        </div>
+        <a id="arrow-down" href="#intro-section">
+            <span class="fa-stack fa-2x fa-beat">
+                <i class="fa-regular fa-circle  fa-stack-2x" style="color: #f5f2f2;"></i>
+                <i class="fa-solid fa-chevron-down  fa-stack-1x" style="color: #f5f2f2;"></i>
+            </span>
+        </a>
+    </section>
+
+
+
+
+
+
+    <section id="intro-section" class="py-5">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-10 col-xl-6 text-center py-5">
+                    <h1 class="fw-bold">THE BEST COFFEE SHOP</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed repellendus
+                        quae, ipsum obcaecati rerum minima laborum autem. Ut nisi tenetur animi quo voluptates. Cumque
+                        sit explicabo totam quasi reiciendis?</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="intro-icon col-sm-4  text-center"><img class="img-fluid py-3" src="./svg/icon-1.svg"
+                        alt="Icon-1">
+                    <P class="h4 fw-bold"> BEST BEANS</P>
+                </div>
+                <div class="intro-icon col-sm-4 text-center"><img class="img-fluid py-3" src="./svg/icon-2.svg"
+                        alt="Icon-2">
+                    <P class="h4 fw-bold">QUALITY MILK</P>
+                </div>
+                <div class="intro-icon col-sm-4 text-center"><img class="img-fluid py-3" src="./svg/icon-3.svg"
+                        alt="Icon-3">
+                    <P class="h4 fw-bold">PERFECT BLEND</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-5 offset-md-1 align-self-center p-5">
+                    <h2>GREAT PLACE</h2>
+                    <P class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, corrupti
+                        inventore ad placeat blanditiis cumque impedit laborum fuga illum provident deserunt</P>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+                <div class="d-none d-md-block col-md-5 offset-md-1" id="about-bg-1">
+
+                </div>
+            </div>
+            <div class="row align-items-center" id="about-bg-2">
+
+                <div class="d-none d-md-block col-md-6">
+
+                </div>
+                <div class=" col-12 col-md-6 text-white p-5">
+                    <h2>FRESH BEANS</h2>
+                    <P class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, corrupti
+                        inventore ad placeat blanditiis cumque impedit laborum fuga illum provident deserunt</P>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="meni-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-5">
+                    <h1>SELECTION FROM OUR MENU</h1>
+                    <P class="text-muted lead ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos ad
+                        at
+                        inventore reiciendis, exercitationem fugit ut earum, aut atque neque officiis mollitia! Amet
+                        ullam
+                        aut dolores sunt minus aperiam?</P>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 text-center p-5">
+                    <img class="mw-100" src="./img/coffee-item-1.png " alt="coffee item1">
+                    <h2>BLACK CAKE</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center p-5">
+                    <img class="mw-100" src="./img/coffee-item-2.png" alt="coffee item2">
+                    <h2>BLACK COFFEE</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center p-5">
+                    <img class="mw-100" src="./img/coffee-item-3.png" alt="coffee item3">
+                    <h2>ESPRESSO</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center p-5">
+                    <img class="mw-100" src="./img/coffee-item-4.png" alt="coffee item4">
+                    <h2>LATTE</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center p-5 ">
+                    <img class="mw-100" src="./img/coffee-item-5.png" alt="coffee item5">
+                    <h2>MACARONS</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center p-5">
+                    <img class="mw-100" src="./img/coffee-item-6.png" alt="coffee item6">
+                    <h2>MACCHIATO</h2>
+                    <P class="lead my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis delectus cumque
+                    </P>
+                    <P class="h3">4E</P>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact-info-section">
+        <div class="container-fluid text-white">
+            <div class="row" id="contact-info-bg-1">
+                <div class="col-md-5 offset-md-1 p-5">
+                    <h2>YOU ARE WELCOME!</h2>
+                    <p>COME ON IN!</p>
+                    <br>
+                    <h4>WEEKDAYS</h4>
+                    <p>08PM - 12AM</p>
+                    <br>
+                    <h4>WEEKENDS</h4>
+                    <p>12 PM - 02 AM</p>
+                </div>
+                <div class="col-6 p-5" id="contact-info-bg-2">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <h4>PHONE</h4>
+                    <p>+(000) 111 222 333</p>
+                    <br>
+                    <h4>MAIL</h4>
+                    <p>address@domain.com</p>
+                    <br>
+                    <h4>ADDRESS</h4>
+                    <p>543 TN, doula street NY, New York</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="map-section">
+        <div id="map"></div>
+    </section>
+
+
+
+    <footer>
+        <div class="container text-white py-3">
+            <div class="row">
+                <div class="col-md-5  offset-md-1 align-self-center">
+                    Coffee Shop | &copy; 2020 ALL rights reserved
+                </div>
+                <div class="col-md-5 text-end" id="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                    <a href="#" class="mx-3"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                    <a href="#" class="mx-3"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="./js/jquery-3.6.3.slim.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/leaflet.js"></script>
+</body>
+
+</html>
